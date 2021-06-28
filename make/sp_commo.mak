@@ -1,3 +1,5 @@
+HOME="/home/roian"
+
 svc=`echo $0 | cut -c1-8`
 if [ ! -d ./$svc ]
 then
@@ -34,6 +36,7 @@ then
 	docker rmi $did
 fi
 
+
 cp ./$svc.dockerfile ./$svc/dockerfile
 cp $HOME/src/$svc.js ./$svc
 
@@ -46,7 +49,7 @@ then
 	echo "docker build fail"
 else
 	vtime=`date +%Y-%m-%d-%H-%M-%S`
-	docker tag $svc changwskr/$svc:1.0
+	docker tag $svc changwskr/$svc:latest
 	echo "============================================================="
 	echo "REPOSITORY                           TAG        IMAGE ID       CREATED                  SIZE "
 	docker images | grep $svc 
@@ -63,6 +66,6 @@ else
 	echo "//////    docker hub                 //////"
 	docker login
 	vtime=`date +%Y-%m-%d-%H-%M-%S`
-	docker push changwskr/$svc:1.0
+	docker push changwskr/$svc:latest
 fi
 
