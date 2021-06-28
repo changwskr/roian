@@ -51,7 +51,7 @@ else
 	echo "============================================================="
 	docker create --name $svc $svc:latest
 	#docker create --name $svc changwskr/$svc:1.0
-	#docker tag $svc changwskr/$svc:1.0
+	docker tag $svc changwskr/$svc:1.0
 	docker start $svc
 	echo "============================================================="
 	docker inspect $svc | grep 'IPAddress' | grep -v Second | tail -1
@@ -64,5 +64,7 @@ fi
 #docker create --name sp_php01 changwskr/sp_php01:1.0
 #docker start sp_php01
 #usermod -aG sudo commo
+#docker login
+#docker push sp_commo changwskr/sp_commo:1.0
 
 

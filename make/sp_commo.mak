@@ -45,6 +45,8 @@ if [ $rtn -eq 1 ]
 then
 	echo "docker build fail"
 else
+	vtime=`date +%Y-%m-%d-%H-%M-%S`
+	docker tag $svc changwskr/$svc:1.0
 	echo "============================================================="
 	echo "REPOSITORY                           TAG        IMAGE ID       CREATED                  SIZE "
 	docker images | grep $svc 
@@ -53,7 +55,14 @@ else
 	docker create --name $svc $svc:latest
 	echo "//////    docker start $svc                        //////"
 	docker start $svc
+	echo "//////    docker ps -a | grep $svc                 //////"
+	docker ps -a | grep $svc
 	echo "============================================================="
 	docker inspect $svc | grep 'IPAddress' | grep -v Second | tail -1
+	echo "============================================================="
+	echo "//////    docker hub                 //////"
+	docker login
+	vtime=`date +%Y-%m-%d-%H-%M-%S`
+	docker push changwskr/$svc:1.0
 fi
 
