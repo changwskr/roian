@@ -1,0 +1,127 @@
+# 이 viminfo 파일은 빔이 만든 것입니다 Vim 8.1.
+# 조심만 한다면 고칠 수도 있습니다!
+
+# Viminfo version
+|1,4
+
+# 이 파일이 저장되었을 때의 'encoding'의 값
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# 명령 행 히스토리 (새것부터 오래된 것 순):
+:q!
+|2,0,1624864553,,"q!"
+:w!
+|2,0,1624862220,,"w!"
+:wq!
+|2,0,1624861600,,"wq!"
+
+# 찾을 문자열 히스토리 (새것부터 오래된 것 순):
+
+# 표현 히스토리 (새것부터 오래된 것 순):
+
+# 입력 행 히스토리 (새것부터 오래된 것 순):
+
+# 디버그 행 히스토리 (새것부터 오래된 것 순):
+
+# 레지스터:
+""0	LINE	0
+	RUN mkdir /home/roian
+|3,1,0,1,1,0,1624862165,"RUN mkdir /home/roian"
+"-	CHAR	0
+	c
+|3,0,36,0,1,0,1624862139,"c"
+
+# 파일 마크:
+'0  23  77  ~/Dockerfile
+|4,48,23,77,1624864553,"~/Dockerfile"
+'1  21  5  ~/make/al_commo/Dockerfile
+|4,49,21,5,1624862047,"~/make/al_commo/Dockerfile"
+'2  46  0  ~/make/al_commo.mak
+|4,50,46,0,1624861788,"~/make/al_commo.mak"
+'3  17  0  ~/make/al_commo/Dockerfile
+|4,51,17,0,1624861600,"~/make/al_commo/Dockerfile"
+'4  17  0  ~/make/al_commo/Dockerfile
+|4,52,17,0,1624861600,"~/make/al_commo/Dockerfile"
+
+# 점프목록 (새것이 먼저):
+-'  23  77  ~/Dockerfile
+|4,39,23,77,1624864553,"~/Dockerfile"
+-'  25  0  ~/Dockerfile
+|4,39,25,0,1624862157,"~/Dockerfile"
+-'  1  0  ~/Dockerfile
+|4,39,1,0,1624862133,"~/Dockerfile"
+-'  21  5  ~/make/al_commo/Dockerfile
+|4,39,21,5,1624862047,"~/make/al_commo/Dockerfile"
+-'  21  5  ~/make/al_commo/Dockerfile
+|4,39,21,5,1624862047,"~/make/al_commo/Dockerfile"
+-'  17  0  ~/make/al_commo/Dockerfile
+|4,39,17,0,1624861799,"~/make/al_commo/Dockerfile"
+-'  17  0  ~/make/al_commo/Dockerfile
+|4,39,17,0,1624861799,"~/make/al_commo/Dockerfile"
+-'  46  0  ~/make/al_commo.mak
+|4,39,46,0,1624861788,"~/make/al_commo.mak"
+-'  46  0  ~/make/al_commo.mak
+|4,39,46,0,1624861788,"~/make/al_commo.mak"
+-'  46  0  ~/make/al_commo.mak
+|4,39,46,0,1624861788,"~/make/al_commo.mak"
+-'  46  0  ~/make/al_commo.mak
+|4,39,46,0,1624861788,"~/make/al_commo.mak"
+-'  1  0  ~/make/al_commo.mak
+|4,39,1,0,1624861610,"~/make/al_commo.mak"
+-'  1  0  ~/make/al_commo.mak
+|4,39,1,0,1624861610,"~/make/al_commo.mak"
+-'  1  0  ~/make/al_commo.mak
+|4,39,1,0,1624861610,"~/make/al_commo.mak"
+-'  1  0  ~/make/al_commo.mak
+|4,39,1,0,1624861610,"~/make/al_commo.mak"
+-'  17  0  ~/make/al_commo/Dockerfile
+|4,39,17,0,1624861600,"~/make/al_commo/Dockerfile"
+-'  17  0  ~/make/al_commo/Dockerfile
+|4,39,17,0,1624861600,"~/make/al_commo/Dockerfile"
+-'  17  0  ~/make/al_commo/Dockerfile
+|4,39,17,0,1624861600,"~/make/al_commo/Dockerfile"
+-'  17  0  ~/make/al_commo/Dockerfile
+|4,39,17,0,1624861600,"~/make/al_commo/Dockerfile"
+-'  1  0  ~/make/al_commo/Dockerfile
+|4,39,1,0,1624861492,"~/make/al_commo/Dockerfile"
+-'  1  0  ~/make/al_commo/Dockerfile
+|4,39,1,0,1624861492,"~/make/al_commo/Dockerfile"
+-'  1  0  ~/make/al_commo/Dockerfile
+|4,39,1,0,1624861492,"~/make/al_commo/Dockerfile"
+-'  1  0  ~/make/al_commo/Dockerfile
+|4,39,1,0,1624861492,"~/make/al_commo/Dockerfile"
+-'  1  0  ~/make/al_commo/Dockerfile
+|4,39,1,0,1624861492,"~/make/al_commo/Dockerfile"
+-'  1  0  ~/make/al_commo/Dockerfile
+|4,39,1,0,1624861492,"~/make/al_commo/Dockerfile"
+
+# 파일내의 마크 히스토리 (새것부터 오래된 순):
+
+> ~/Dockerfile
+	*	1624862220	0
+	"	23	77
+	^	23	78
+	.	23	77
+	+	20	20
+	+	25	0
+	+	24	37
+	+	21	24
+	+	24	41
+	+	25	41
+	+	26	29
+	+	23	77
+
+> ~/make/al_commo/Dockerfile
+	*	1624862046	0
+	"	21	5
+	^	22	15
+	.	22	14
+	+	21	14
+	+	22	14
+
+> ~/make/al_commo.mak
+	*	1624861620	0
+	"	46	0
