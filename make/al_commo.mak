@@ -1,5 +1,4 @@
 svc=`echo $0 | cut -c1-8`
-HOME=/home/commo
 
 if [ ! -d ./$svc ]
 then
@@ -36,11 +35,9 @@ then
 	docker rmi $did
 fi
 
-set -x
 cp ./$svc.dockerfile ./$svc/Dockerfile
 cp $HOME/src/*.js ./$svc
 
-set -x
 cd ./$svc
 docker build -t $svc:latest .
 rtn=$?

@@ -10,6 +10,6 @@ var handler = function(request,response){
 }
 
 var www = http.createServer(handler)
-www.listen(8082);
+www.listen(8080);
 
-console.log("Server running at http://127.0.0.1:8082/");
+console.log("Server running at http://127.0.0.1:8080/");

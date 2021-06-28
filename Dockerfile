@@ -14,6 +14,8 @@ RUN apt-get install -y php5.6
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 RUN cat /etc/apache2/apache2.conf
 
+RUN apt-get install -y nodejs || true
+
 EXPOSE 8181
 CMD ["/usr/sbin/apache2ctl", "-DFOREGROUD"]
 
