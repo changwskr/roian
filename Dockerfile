@@ -22,9 +22,15 @@ CMD ["/usr/sbin/apache2ctl", "-DFOREGROUD"]
 RUN mkdir /home/roian
 RUN mkdir /home/roian/src
 
+
+#-----
+#-----
+#-----
+
 # 복사원본은 항상 현재 실행위치에서 하위에 있어야 된다.
 COPY $HOME/src/sp_commo.js /home/roian/src
 COPY $HOME/src/sp_comrc.js /home/roian/src 
 CMD ["node", "/home/roian/src/sp_commo.js"] 
+
 
 
