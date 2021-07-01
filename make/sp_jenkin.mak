@@ -3,6 +3,7 @@
 docker login
 docker pull jenkins/jenkins
 docker run -d -p 8080:8080 -v /home/jenkins:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -u root jenkins/jenkins
+docker run -d -p 8080:8080 -v /home/jenkins:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -u root changwskr/roian_jenkins:1.0
 vid=`docker ps -a | grep jenkins | awk '{print $1}'`
 
 #jenkin에 docker 설치
