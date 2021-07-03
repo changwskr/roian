@@ -80,4 +80,25 @@ docker container run -it --name "myroiandev" --hostname myroiandev -v /home/roia
 # docker time 
 # -----------------------------------------------------------------
 # ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime
-
+#
+# -----------------------------------------------------------------
+# ssh key gen
+# -----------------------------------------------------------------
+# ssh-keygen -t rsa
+# ls -l .ssh
+# [root@myroiandev ~]# ls -l .ssh
+# total 8
+# -rw-------. 1 root root 2602 Jul  3 17:39 id_rsa
+# -rw-r--r--. 1 root root  569 Jul  3 17:39 id_rsa.pub
+#
+# ssh-copy-id -i .ssh/id_rsa.pub roian@10.100.0.108 -p portno
+#
+# rsync 설치
+# rsync -avz 10.100.0.108:/root/check.txt . -e 'ssh -p 3000'
+#
+# -----------------------------------------------------------------
+#  docker image commit
+# -----------------------------------------------------------------
+#  docker commit myroiandev myroiandevimg
+#
+#
