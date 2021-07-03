@@ -6,21 +6,22 @@
 
 
 # hlsearch on (H) or off (h):
-~h
+~H
 # Last Search Pattern:
-~MSle0~/installation
+~MSle0~/deal
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq!
+:w!
 :q!
 :set ts=4
-:w!
 :1
 
 # Search String History (newest to oldest):
+?/deal
 ? @$
 ?/installation
 ?/commo
@@ -33,45 +34,57 @@ $
 
 # Registers:
 "0	LINE	0
-	docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=!1974yoe0 mysql:5.6
-"1	LINE	0
-		docker tag $svc changwskr/$svc:1.0
+	# $myroiandev> nginx
+""1	LINE	0
+	ex
 "2	LINE	0
-		echo "docker tag $svc changwskr/$svc:1.0"
+	#docker run --name centos centos:latest /bin/echo 'hello docker'
 "3	LINE	0
-	
+	#  $myroiandev> yum install epel-release -y
+	#  $myroiandev> yum install which -y
+	#  $myroiandev> yum install telnet -y
+	#  $myroiandev> yum install rsync -y
+	#  $myroiandev> yum install openssh-clients -y
+	# -----------------------------------------------------------------
 "4	LINE	0
-	docker tag $svc changwskr/$svc:1.0
+	#
 "5	LINE	0
-		docker tag $svc changwskr/$svc:1.0
+	docker commit
 "6	LINE	0
-	
+		docker tag $svc changwskr/$svc:1.0
 "7	LINE	0
-	
+		echo "docker tag $svc changwskr/$svc:1.0"
 "8	LINE	0
-	HOME=/home/commo
+	
 "9	LINE	0
-	set -x
-""-	CHAR	0
-	:
+	docker tag $svc changwskr/$svc:1.0
+"-	CHAR	0
+	nginx
 
 # File marks:
-'0  1  62  ~/make/sp_centos.mak
-'1  2  64  ~/make/sp_mysql.mak
-'2  1  0  ~/make/sp_mysql.mak
-'3  15  15  ~/.bashrc
-'4  68  43  ~/make/al_commo.mak
-'5  6  0  ~/make/al_commo
-'6  33  20  ~/make/sp_commo.mak
-'7  48  1  ~/make/sp_commo.mak
-'8  48  1  ~/make/sp_commo.mak
-'9  55  41  ~/make/sp_commo.mak
+'0  13  0  ~/.bash_profile
+'1  17  8  ~/.bashrc
+'2  36  0  ~/make/sp_centos.mak
+'3  14  55  ~/make/sp_centos.mak
+'4  11  0  ~/make/sp_centos.mak
+'5  1  62  ~/make/sp_centos.mak
+'6  2  64  ~/make/sp_mysql.mak
+'7  1  0  ~/make/sp_mysql.mak
+'8  15  15  ~/.bashrc
+'9  68  43  ~/make/al_commo.mak
 
 # Jumplist (newest first):
--'  1  62  ~/make/sp_centos.mak
+-'  13  0  ~/.bash_profile
+-'  1  0  ~/.bash_profile
+-'  17  8  ~/.bashrc
+-'  15  0  ~/.bashrc
+-'  36  0  ~/make/sp_centos.mak
+-'  15  10  ~/make/sp_centos.mak
+-'  14  0  ~/make/sp_centos.mak
+-'  11  0  ~/make/sp_centos.mak
+-'  1  0  ~/make/sp_centos.mak
 -'  2  64  ~/make/sp_mysql.mak
 -'  1  0  ~/make/sp_mysql.mak
--'  15  15  ~/.bashrc
 -'  1  0  ~/.bashrc
 -'  68  43  ~/make/al_commo.mak
 -'  53  1  ~/make/al_commo.mak
@@ -158,22 +171,62 @@ $
 -'  57  0  ~/make/sp_commo.mak
 -'  57  0  ~/make/sp_commo.mak
 -'  53  1  ~/make/al_commo.mak
--'  53  1  ~/make/al_commo.mak
--'  53  1  ~/make/al_commo.mak
--'  53  1  ~/make/al_commo.mak
--'  53  1  ~/make/al_commo.mak
--'  53  1  ~/make/al_commo.mak
--'  53  1  ~/make/al_commo.mak
--'  53  1  ~/make/al_commo.mak
--'  53  1  ~/make/al_commo.mak
+-'  36  0  ~/make/sp_centos.mak
+-'  15  10  ~/make/sp_centos.mak
 
 # History of marks within files (newest to oldest):
 
+> ~/.bash_profile
+	"	13	0
+	.	14	0
+	+	14	0
+
+> ~/.bashrc
+	"	17	8
+	^	17	9
+	.	17	8
+	+	14	9
+	+	13	8
+	+	15	16
+	+	17	8
+
 > ~/make/sp_centos.mak
-	"	1	62
-	^	1	63
-	.	1	62
-	+	1	62
+	"	36	0
+	^	34	28
+	.	34	27
+	+	1	63
+	+	15	143
+	+	1	0
+	+	15	80
+	+	14	66
+	+	1	71
+	+	3	0
+	+	2	21
+	+	37	0
+	+	13	59
+	+	15	0
+	+	15	10
+	+	15	6
+	+	15	6
+	+	15	6
+	+	15	6
+	+	15	0
+	+	15	0
+	+	16	0
+	+	24	0
+	+	23	0
+	+	3	5
+	+	1	0
+	+	30	0
+	+	25	2
+	+	32	1
+	+	31	0
+	+	36	0
+	+	32	34
+	+	33	13
+	+	32	10
+	+	35	0
+	+	34	27
 
 > ~/make/sp_mysql.mak
 	"	2	64
@@ -182,14 +235,6 @@ $
 	+	2	0
 	+	1	0
 	+	2	64
-
-> ~/.bashrc
-	"	15	15
-	^	15	16
-	.	15	15
-	+	14	9
-	+	13	8
-	+	15	15
 
 > ~/make/al_commo.mak
 	*	1624870213	0

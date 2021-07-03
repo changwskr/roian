@@ -65,3 +65,19 @@ ls
 yum repolist
 yum install epel-release -y
 exit
+ls
+cd workspace
+ls
+mkdir -p ./www/myroian
+ls
+cd www
+ls
+ls -l
+curl http://localhost:80
+su - root
+ls
+cd
+pwd
+ls -alt
+vi .bashrc
+. .bashrc
